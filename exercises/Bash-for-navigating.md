@@ -35,7 +35,7 @@ see also
 You need to download some files to follow this lesson:
 
 Make a new folder in your Desktop called shell-novice.
-Download [shell-novice-data.zip](https://github.com/sr320/course-fish274-2020/blob/master/data/pretend-computer?raw=true) and move the file to this folder.
+Download [shell-novice-data.zip](https://github.com/sr320/course-fish274-2021/blob/master/data/pretend-computer?raw=true) and move the file to this folder.
 If it’s not unzipped yet, double-click on it to unzip it. You should end up with a new folder called data.
 
 see also `http://gannet.fish.washington.edu/seashell/snaps/pretend-computer.zip`

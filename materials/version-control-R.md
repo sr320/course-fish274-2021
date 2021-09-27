@@ -64,7 +64,7 @@ data files and code in a more manageable way.
 
 1. Navigate to Github in a web browser and login.
 2. Click the `+` at the upper right corner of the page and choose `New repository`.
-3. Choose the class organization (e.g., `course-fish274-2020`) as the `Owner` of the
+3. Choose the class organization (e.g., `course-fish274-2021`) as the `Owner` of the
    repo.
 4. Fill in a `Repository name` that follows the form `FirstnameLastname`.
 5. Select `Initialize this repository with a README`.
