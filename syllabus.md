@@ -3,13 +3,13 @@ layout: page
 title: Syllabus
 catalog: FISH 274
 credits: 3
-semester: Autumn 2020
+semester: Autumn 2021
 professor: Dr. Steven Roberts
 office: FTR 232
 email: sr320@uw.edu
 phone: 206-866-5141
-schedule: ['Tuesdays, 9:30 – 11:20AM, Online',
-           'Thursdays, 9:30 – 10:50AM, Online']
+schedule: ['Tuesdays, 9:30 – 11:20AM, by appt',
+           'Thursdays, 9:30 – 10:50AM, in person']
 #office_hours: Monday 2-3:15 and Wednesday 11-12
 #office_hours_location: Newins-Zeigler 203
 TA: TBD
