@@ -8,8 +8,8 @@ professor: Dr. Steven Roberts
 office: FTR 232
 email: sr320@uw.edu
 phone: 206-866-5141
-schedule: ['Tuesdays, 9:30 – 11:20AM, by appt',
-           'Thursdays, 9:30 – 10:50AM, in person']
+schedule: ['Tuesdays, 9:30 – 11:20AM, ',
+           'Thursdays, 9:30 – 10:50AM, ']
 #office_hours: Monday 2-3:15 and Wednesday 11-12
 #office_hours_location: Newins-Zeigler 203
 TA: TBD

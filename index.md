@@ -7,7 +7,7 @@ interact with data including: data structure, navigating the commandline, and pr
 Additional lessons are added from Software Carpentry and Data Carpentry.
 
 This class meets 2 times a week.
->Tuesdays, 9:30 – 11:20AM, by appt
->Thursdays, 9:30 – 10:50AM, in person
+>Tuesdays, 9:30 – 11:20AM, 
+>Thursdays, 9:30 – 10:50AM,
 
 See the sidebar to access the syllabus and schedule.
