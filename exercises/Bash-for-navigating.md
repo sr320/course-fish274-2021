@@ -164,7 +164,7 @@ data       north-pacific-gyre  solar.pdf
 Desktop    notes.txt           writing
 ```
 
-<img src="http://eagle.fish.washington.edu/cnidarian/skitch/Files_and_Directories_1A575D2F.png" alt="Nelle's Home Directory" />
+<img src="https://raw.githubusercontent.com/sr320/course-fish274-2021/main/docs/img/ls-image.png" alt="Nelle's Home Directory" />
 
 `ls` prints the names of the files and directories in the current directory in alphabetical order,
 arranged neatly into columns.
