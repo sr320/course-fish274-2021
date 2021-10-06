@@ -33,12 +33,10 @@ see also
 
 ---
 
-For this we will be You need to download some files to follow this lesson:
+For this we will be using UW JupyterHub Terminal instance.
 
-Make a new folder in your Desktop called shell-novice.
-Download [shell-novice-data.zip](https://d.pr/f/BDaGTy) and move the file to this folder.
-
-This might already be done for you.
+The file will be preloaded on your instance but from reference this is the file -
+[shell-novice-data.zip](https://d.pr/f/BDaGTy)
 
 
 The part of the operating system responsible for managing files and directories
@@ -70,7 +68,7 @@ it shows us who the shell thinks we are:
 $ whoami
 ```
 ```
-yourname
+jovyan
 ```
 
 More specifically, when we type `whoami` the shell:
@@ -92,14 +90,14 @@ i.e.,
 the directory that the computer assumes we want to run commands in
 unless we explicitly specify something else.
 Here,
-the computer's response is `/users/nelle`,
-which is Nelle's **home directory**:
+the computer's response is `/home/jovyan`
+
 
 ```
 $ pwd
 ```
 ```
-/users/nelle
+/home/jovyan
 ```
 <!---
 > ## Alphabet Soup
@@ -123,9 +121,9 @@ let's have a look at how the file system as a whole is organized.
 At the top is the **root directory**
 that holds everything else.
 We refer to it using a slash character `/` on its own;
-this is the leading slash in `/users/nelle`.
+this is the leading slash in `/home/jovyan`.
 
-Inside that directory are several other directories:
+<!-- Inside that directory are several other directories:
 `bin` (which is where some built-in programs are stored),
 `data` (for miscellaneous data files),
 `users` (where users' personal directories are located),
@@ -141,7 +139,7 @@ we know that `/users` is stored inside the root directory `/`
 because its name begins with `/`.
 
 
-<img src="http://eagle.fish.washington.edu/cnidarian/skitch/Files_and_Directories_1A575CC7.png" alt="Home Directories" />
+<img src="http://eagle.fish.washington.edu/cnidarian/skitch/Files_and_Directories_1A575CC7.png" alt="Home Directories" /> -->
 
 > Notice that there are two meanings for the `/` character.
 > When it appears at the front of a file or directory name,
@@ -150,11 +148,11 @@ because its name begins with `/`.
 
 ---
 
-So that we have the same experience lets navigate to the 'fake' directory structure you just downloaded.  For example on a Mac you can type `cd Desktop/shell-novice/data/users/nelle` if you are in your home direcotory.
+So that we have the same experience lets navigate to the 'data-shell' directory.  
 
 ## ls
 
-Let's see what's in Nelle's home directory by running `ls`,
+Let's see what's in this directory by running `ls`,
 which stands for "listing":
 
 ```
