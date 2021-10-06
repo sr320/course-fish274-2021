@@ -36,11 +36,11 @@ see also
 For this we will be using UW JupyterHub Terminal instance.
 
 The file will be preloaded on your instance but from reference this is the file -
-[shell-novice-data.zip](https://d.pr/f/BDaGTy)
+[data-shell.zip](https://d.pr/f/BDaGTy)
 
 
 The part of the operating system responsible for managing files and directories
-is called the **file system**.
+is called the **file system**.ß
 It organizes our data into files,
 which hold information,
 and directories (also called "folders"),
