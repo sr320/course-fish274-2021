@@ -218,7 +218,7 @@ which doesn't exist.
 
 
 ## relative path
-Now let's take a look at what's in Nelle's `data` directory by running `ls -F data`,
+Now let's take a look at what's in `data-shell` directory by running `ls -F data`,
 i.e.,
 the command `ls` with the **arguments** `-F` and `data`.
 The second argument --- the one *without* a leading dash --- tells `ls` that
@@ -229,8 +229,7 @@ we want a listing of something other than our current working directory:
 $ ls -F data
 ```
 ```
-amino-acids.txt   elements/     morse.txt
-pdb/              planets.txt   sunspot.txt
+amino-acids.txt  animal-counts/  animals.txt  elements/  morse.txt  pdb/  planets.txt  salmon.txt  sunspot.txt
 ```
 
 The output shows us that there are four text files and two sub-sub-directories.
@@ -268,20 +267,25 @@ because `/data` is an **absolute path**:
 $ ls -F /data
 ```
 
-```
-access.log    backup/    hardware.cfg
-network.cfg
-```
-**Note** you will get an "No file" warning here. This is because we are not really on Nelle's machine. But this should make sense if you consider the directory organization.
-
-![pic](https://camo.githubusercontent.com/ea9ad5b1c9a04de70ad43940ae5f8affbcca401b/687474703a2f2f6561676c652e666973682e77617368696e67746f6e2e6564752f636e6964617269616e2f736b697463682f46696c65735f616e645f4469726563746f726965735f31413537354343372e706e67)
+**Note** you will get an "No file" warning here. This is because we this directory does not exist.
 
 
-
-The leading `/` ( or possibly `/c/` if you are using Git Bash on Windows) tells the computer to follow the path from the root of the filesystem,
+The leading `/` tells the computer to follow the path from the root of the filesystem,
 so it always refers to exactly one directory,
 no matter where we are when we run the command.
 
+
+If we wanted to use the **absolute path* to list out the contents of this directory we could used
+
+```
+$ ls -F /home/jovyan/data-shell/data/
+```
+
+Note this would work no matter what our pwd is.
+
+
+
+<!--
 What if we want to change our current working directory?
 Before we do this,
 `pwd` shows us that we're in `/users/nelle`,
@@ -386,7 +390,7 @@ As you can see,
 it also displays another special directory that's just called `.`,
 which means "the current working directory".
 It may seem redundant to have a name for it,
-but we'll see some uses for it soon.
+but we'll see some uses for it soon. -->
 
 <!--
 > ## Orthogonality {.callout}
@@ -536,14 +540,7 @@ and we will see it in many other tools as we go on.
 * Display the contents of a directory using the command line.
 * Delete specified files and/or directories.
 
-We now know how to explore files and directories, but how do we create them in the first place? Let's go back to Nelle's home directory, `/users/nelle`, and use `ls -F` to see what it contains:
-
-    $ pwd
-
-    /users/nelle
-
-**Actually**   will look something more like `/Users/sr320/Desktop/shell-novice/data/users/nelle`
-
+We now know how to explore files and directories, but how do we create them in the first place? Let's go back to  `data-shell`, and use `ls -F` to see what it contains:
 
 
     $ ls -F
