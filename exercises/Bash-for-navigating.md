@@ -32,7 +32,8 @@ see also
 > *   Demonstrate the use of tab completion, and explain its advantages.
 
 ---
-You need to download some files to follow this lesson:
+
+For this we will be You need to download some files to follow this lesson:
 
 Make a new folder in your Desktop called shell-novice.
 Download [shell-novice-data.zip](https://d.pr/f/BDaGTy) and move the file to this folder.
