@@ -108,7 +108,7 @@ Steven Roberts
 
 - Start RStudio
 - Under the File menu, click on New project, choose New directory, then New project
-- Enter a name for this new folder (or “directory”), and choose a convenient location for it. This will be your working directory (e.g., ~/fish497-w3)
+- Enter a name for this new folder (or “directory”), and choose a convenient location for it. This will be your working directory (e.g., ~/fish274-w3)
 - Click on Create project
 - Download the [code handout](http://www.datacarpentry.org/R-ecology-lesson/code-handout.R), place it in your working directory and rename it (e.g.,  code-script.R).
 - Under the Files tab on the right of the screen, click on New Folder and create a folder named data within your newly created working directory (e.g., ~/fish274-w3/data)
