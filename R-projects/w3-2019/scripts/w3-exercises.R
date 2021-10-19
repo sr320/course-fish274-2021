@@ -24,7 +24,7 @@ mass_g <- mass_kg * 1000
 print(mass_g)
 
 
-mass_lb <- 8845847548
+mass_lb <- 3.5
 mass_kg <- mass_lb / 2.2046
 print(mass_kg)
 
@@ -158,7 +158,7 @@ sum(length*width*height)
 
 length > 2.5 # will return logicals with TRUE for the indices that meet the condition
 
-## so we can use this to select only the values above 50
+## so we can use this to select only the values above 2.5
 height[length > 2.5]
 
 
@@ -183,3 +183,5 @@ shrub_data$length
 shrub_data["length"]
 
 shrub_data[["length"]]
+
+shrub_data$length * shrub_data$width  * shrub_data$height
