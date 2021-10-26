@@ -5,7 +5,7 @@ title: Graphing using ggplot
 language: R
 ---
 
-> Get familiarized with [metadata](http://www.esapubs.org/archive/ecol/E095/064/metadata.php) - *Acacia drepanolobium* Surveys
+> Get familiarized with [metadata](https://www.esapubs.org/archive/ecol/E095/064/metadata.php) - *Acacia drepanolobium* Surveys
 
 ### Data
 
@@ -14,7 +14,7 @@ language: R
 * Includes information on if the plant is dead in the HEIGHT column
 
 ```
-acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = "dead")
+acacia <- read.csv("https://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = "dead")
 ```
 
 ### Basics
@@ -23,7 +23,7 @@ acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOL
 library(ggplot2)
 ```
 
-* [`ggplot()`](http://docs.ggplot2.org/current/ggplot.html) arguments:
+* [`ggplot()`](https://ggplot2.tidyverse.org/reference/ggplot.html) arguments:
     * default dataset - what data are we working with
     * set of mappings
         * 'Aesthetics' from variables
@@ -31,7 +31,7 @@ library(ggplot2)
     * `ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT))`
 
 * Add components of figures with layers
-    * [`geom_point()`](http://docs.ggplot2.org/current/geom_point.html)
+    * [`geom_point()`](https://ggplot2.tidyverse.org/reference/geom_point.html)
 
 * Scatter plot showing branch circumference and height
 
@@ -48,7 +48,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 ```
 
 * Rescale axes
-    * [`scale_continuous()`](http://docs.ggplot2.org/current/scale_continuous.html)
+    * [`scale_continuous()`](https://ggplot2.tidyverse.org/reference/scale_continuous.html)
 
 ```
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
@@ -123,7 +123,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
 * Layers are plotted in the order they are added
 
 ```
-trees <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt",
+trees <- read.csv("https://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt",
                   sep="\t", na.strings = c("dead", "missing", "MISSING", "NA"))
 ggplot() +
   geom_point(data = trees, aes(x = CIRC, y = HEIGHT), color = "gray") +
@@ -153,7 +153,7 @@ ggplot(mapping = aes(x = CIRC, y = HEIGHT)) +
 * Occur as defaults in associated Geoms
 
 * To look at the number of acacia in each treatment use a bar plot
-    * [`geom_bar()`](http://docs.ggplot2.org/current/geom_bar.html)
+    * [`geom_bar()`](https://ggplot2.tidyverse.org/reference/geom_bar.html)
 
 ```
 ggplot(acacia, aes(x = TREATMENT)) +
@@ -164,7 +164,7 @@ ggplot(acacia, aes(x = TREATMENT)) +
     * Counts the number of rows for each treatment
 
 * To look at the distribution of circumferences in the dataset use a histogram
-    * [`geom_histogram()`](http://docs.ggplot2.org/current/geom_histogram.html)
+    * [`geom_histogram()`](https://ggplot2.tidyverse.org/reference/geom_histogram.html)
 
 ```
 ggplot(acacia, aes(x = CIRC)) +
@@ -189,20 +189,20 @@ ggplot(acacia, aes(x = CIRC)) +
 ### Additional information
 
 * Geometric object
-    * [`geom_point()`](http://docs.ggplot2.org/current/geom_point.html)
-    * [`geom_line()`](http://docs.ggplot2.org/current/geom_path.html)
+    * [`geom_point()`](https://ggplot2.tidyverse.org/reference/geom_point.html)
+    * [`geom_line()`](https://ggplot2.tidyverse.org/reference/geom_path.html)
 * Statistical visualization
-    * [`geom_smooth()`](http://docs.ggplot2.org/current/geom_smooth.html)
-    * [`geom_bar()`](http://docs.ggplot2.org/current/geom_bar.html)
-    * [`geom_histogram()`](http://docs.ggplot2.org/current/geom_histogram.html)
-    * [`geom_boxplot()`](http://docs.ggplot2.org/current/geom_boxplot.html)
+    * [`geom_smooth()`](https://ggplot2.tidyverse.org/reference/geom_smooth.html)
+    * [`geom_bar()`](https://ggplot2.tidyverse.org/reference/geom_bar.html)
+    * [`geom_histogram()`](https://ggplot2.tidyverse.org/reference/geom_histogram.html)
+    * [`geom_boxplot()`](https://ggplot2.tidyverse.org/reference/geom_boxplot.html)
 * Dataset and aesthetic adjustments
-    * [`scale_continuous()`](http://docs.ggplot2.org/current/scale_continuous.html)
-    * [`scale_manual()`](http://docs.ggplot2.org/current/scale_manual.html)
-    * [`lims()`](http://docs.ggplot2.org/current/lims.html)
-    * [`labs()`](http://docs.ggplot2.org/current/labs.html)
-    * [`guide_legend()`](http://docs.ggplot2.org/current/guide_legend.html)
-    * [`theme()`](http://docs.ggplot2.org/current/theme.html), `theme_bw()`, `theme_classic()`
+    * [`scale_continuous()`](https://ggplot2.tidyverse.org/reference/scale_continuous.html)
+    * [`scale_manual()`](https://ggplot2.tidyverse.org/reference/scale_manual.html)
+    * [`lims()`](https://ggplot2.tidyverse.org/reference/lims.html)
+    * [`labs()`](https://ggplot2.tidyverse.org/reference/labs.html)
+    * [`guide_legend()`](https://ggplot2.tidyverse.org/reference/guide_legend.html)
+    * [`theme()`](https://ggplot2.tidyverse.org/reference/theme.html), `theme_bw()`, `theme_classic()`
 * Grouping related data
     * Same plot
         * Assign grouping variables as default or layer `aes()`
@@ -210,13 +210,13 @@ ggplot(acacia, aes(x = CIRC)) +
             * `color`
             * `shape`
     * Multiple plots
-        * [`facet_grid()`](http://docs.ggplot2.org/current/facet_grid.html)
-        * [`facet_wrap()`](http://docs.ggplot2.org/current/facet_wrap.html)
+        * [`facet_grid()`](https://ggplot2.tidyverse.org/reference/facet_grid.html)
+        * [`facet_wrap()`](https://ggplot2.tidyverse.org/reference/facet_wrap.html)
 
 ### Saving plots as new files
 
 ```
-ggsave(“acacia_by_treatment.jpg”)
+ggsave("acacia_by_treatment.jpg")
 ```
 
 * Lots of optional arguments
@@ -225,5 +225,5 @@ ggsave(“acacia_by_treatment.jpg”)
     * Size
 
 ```
-ggsave(“figures/acacia_by_treatment.pdf”, height = 5, width = 5)
+ggsave("figures/acacia_by_treatment.pdf", height = 5, width = 5)
 ```
