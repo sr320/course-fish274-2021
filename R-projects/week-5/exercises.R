@@ -29,7 +29,16 @@ ggplot(size_mr_data, aes(x = body_mass, y = metabolic_rate)) +
        title = "Week 5 - Ex 1 Graph")
 
 ----
-  
+Mammal_life <- read.csv("https://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt", sep="\t", nrows = 1440, na.strings = c("-999", "-999.00"))
+
+#trying the second link for the data. 
+Mammal_est <- read.csv("http://gannet.fish.washington.edu/seashell/snaps/Mammal_lifehistories_v2.txt", sep="\t", nrows = 1440, na.strings = c("-999", "-999.00"))
+
+http://gannet.fish.washington.edu/seashell/snaps/Mammal_lifehistories_v2.txt
+
+
+
+   
 Mammal_lif <- read.csv("data/Mammal_lifehistories_v2.txt", sep="\t", nrows = 1440, na.strings = c("-999", "-999.00"))
 
 
@@ -98,7 +107,7 @@ ggplot(Mammal_lif, aes(x = mass.g., y = newborn.g.)) +
 avian <- read.csv("data/avian_ssd_jan07.txt", sep="\t", na.strings = c("-999", "-999.0"))
 
 
-data_birds <- read.csv("http://www.esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt",sep ="\t",na.strings = c("-999", "-999.00"))
+data_birds <- read.csv("https://www.esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt",sep ="\t",na.strings = c("-999", "-999.00"))
 
 ggplot(data = data_birds) +
   geom_histogram(aes(x = F_mass)) +
@@ -129,7 +138,7 @@ ggplot(avian, aes(x = F_mass)) +
 
 ggplot() +
   geom_histogram(data = avian, aes(x = M_mass), fill = "blue", alpha = 0.3) +
-  geom_histogram(data = avian, aes(x = F_mass), fill = "yellow", alpha = 0.3) +
+  geom_histogram(data = avian, aes(x = F_mass), fill = "green", alpha = 0.3) +
   scale_x_log10() +
   labs(x = "Mass(g)")
 
